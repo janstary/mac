@@ -1,0 +1,101 @@
+sudo su -
+	hostname name.stare.cz
+	scutil --set ComputerName name
+	scutil --set LocalHostName name
+	scutil --set HostName name.stare.cz
+	mdutil -d -i off -a
+	bioutil -w -f 0
+	tmutil disable
+
+ssh-keygen -t ed25519
+add the key to github
+
+git # first time will install the cmdline tools
+git clone git@github.com:janstary/mac
+git clone git@github.com:janstary/env
+git clone git@github.com:janstary/dmesg
+git clone git@github.com:janstary/ports
+./env/bin/aclimatize ./env
+relogin
+
+install firefox, vlc
+install from ports/ (upgrade while there)
+
+crontab
+	hwinfo if we can do it (temperature, battery)
+
+hw:
+	maximize ram
+	battery
+
+audio
+video
+print
+
+backup
+	/backup
+	root# ssh-keygen
+	daily.local
+
+System Preferences > Battery:
+	don't sleep with monitor off (disrupts long downloads)
+	Is there a cmdline tool to say so?
+
+shutdown -h now?
+nightly backup
+time machine?
+
+dns:
+	does not search within our domain
+	scutil --dns
+	man resolver
+
+
+incorporate into ports:
+
+autoconf
+autoconf-archive
+autogen
+automake
+charis
+djview4
+djvulibre
+dmidecode
+doulos
+fdm
+ffmpeg
+g++
+gcc
+git
+gmake
+gv
+intel-media-driver
+intel-vaapi-driver
+iogen
+libreoffice
+libtool
+libva-utils
+lynx
+mplayer
+mpv
+mupdf
+mutt
+nvi
+openvpn
+p7zip
+pcc
+pciutils
+pjsua
+portslist
+rsync
+rtorrent
+sox
+texlive_texmf-full
+unrar
+unzip
+urlview
+vim
+vorbis-tools
+xv
+zip
+
