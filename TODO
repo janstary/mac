@@ -21,7 +21,7 @@ git clone git@github.com:janstary/ports
 ./env/bin/aclimatize ./env
 relogin
 
-install firefox, vlc
+install firefox, tex, vlc
 install from ports/ (upgrade while there)
 
 crontab
@@ -48,12 +48,6 @@ shutdown -h now?
 nightly backup
 time machine?
 
-dns:
-	does not search within our domain
-	scutil --dns
-	man resolver
-
-
 incorporate into ports:
 
 autoconf
@@ -67,38 +61,24 @@ dmidecode
 doulos
 fdm
 ffmpeg
-g++
-gcc
-git
-gmake
 gv
-intel-media-driver
-intel-vaapi-driver
 iogen
-libreoffice
 libtool
-libva-utils
-lynx
 mplayer
 mpv
 mupdf
 mutt
-nvi
 openvpn
 p7zip
 pcc
 pciutils
 pjsua
 portslist
-rsync
 rtorrent
 sox
-texlive_texmf-full
 unrar
 unzip
 urlview
-vim
 vorbis-tools
 xv
 zip
-
