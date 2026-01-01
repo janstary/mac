@@ -1,10 +1,9 @@
-dns:
+dns (sudo)
 	hostname name.stare.cz
 	scutil --set ComputerName name
 	scutil --set LocalHostName name
 	scutil --set HostName name.stare.cz
-	On older macOSes: Network, XY, Advanced, DNS, add search domain
-	(on newer macOSes, the dhcpclient writes resolv.conf properly)
+	networksetup -setsearchdomains Wi-Fi stare.cz
 
 turn off:
 	mdutil -d -i off -a
