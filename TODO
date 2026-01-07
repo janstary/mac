@@ -4,8 +4,6 @@ dns (sudo)
 	scutil --set LocalHostName name
 	scutil --set HostName name.stare.cz
 	networksetup -setsearchdomains Wi-Fi stare.cz
-
-turn off:
 	mdutil -d -i off -a
 	bioutil -w -s -f 0
 	tmutil disable
