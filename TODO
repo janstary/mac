@@ -7,7 +7,7 @@ dns (sudo)
 
 turn off:
 	mdutil -d -i off -a
-	bioutil -w -f 0
+	bioutil -w -s -f 0
 	tmutil disable
 
 ssh-keygen -t ed25519
