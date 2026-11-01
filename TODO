@@ -19,6 +19,8 @@ git clone git@github.com:janstary/ports
 ./env/bin/aclimatize ./env
 relogin
 
+install praat
+install reaper, protools
 install firefox, tex, vlc
 install from ports/ (upgrade while there)
 
